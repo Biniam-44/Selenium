@@ -20,7 +20,7 @@ public class Dynamic_RadioButton {
 		
        String attText = driver.findElements(By.xpath("//input[@name='group1']")).get(i).getAttribute("value");
        
-       if (attText == "Milk")
+       if (attText.equals("Cheese"))
        {
     	  driver.findElements(By.xpath("//input[@name='group1']")).get(i).click();
        }
