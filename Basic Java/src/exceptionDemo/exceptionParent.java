@@ -3,6 +3,7 @@ package exceptionDemo;
 public class exceptionParent {
 	// one try block can be followed by multiple catch blocks
 	// catch block should always follow immediately by the try block
+	// Is there anywhere finally block will not be executed? yes, weh you stopped JVM forcefully 
 	public void getResult()
 	{
 	int a= 4;
