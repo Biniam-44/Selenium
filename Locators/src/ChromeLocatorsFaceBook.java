@@ -14,12 +14,17 @@ public class ChromeLocatorsFaceBook {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://facebook.com");
+		driver.findElement(By.cssSelector("#email")).sendKeys("test");
+		//driver.findElement(By.linkText("Forgot account?")).click();
+		//driver.findElement(By.ByCssSelector)
+		
+		/*driver.findElement(By.name("pass")).sendKeys("123456");
 		driver.findElement(By.id("email")).sendKeys("Test@gmail.com");
 		driver.findElement(By.className("inputtext")).sendKeys("123456");
-		//driver.findElement(By.name("pass")).sendKeys("123456");
+		
 		//driver.findElement(By.id("pass")).sendKeys("1234asd");
 		driver.findElement(By.linkText("Forgot account?")).click();
-		driver.findElement(By.id("loginbutton")).click(); 
+		driver.findElement(By.id("loginbutton")).click();  */
 	}
 
 }
